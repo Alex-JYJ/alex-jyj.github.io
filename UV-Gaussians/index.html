@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projectpage of UV Gaussians</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  </head>
+
+  <!-- cover -->
+  <section>
+    <div class="jumbotron text-center mt-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>UV Gaussians: Joint Learning of Mesh Deformation and Gaussian Textures for Human Avatar Modeling</h2>
+            <h4 style="color:#5a6268;">Anonymous Submission</h4>
+            <hr>
+            <h6> 
+              Yujiao Jiang<sup>1</sup>,
+              Qingmin Liao<sup>1</sup>,
+              Xiaoyu Li<sup>2*</sup>,
+              Li Ma<sup>3</sup>,
+              Qi Zhang<sup>2</sup>,
+              Chaopeng Zhang<sup>2</sup>,
+              Zongqing Lu<sup>1</sup>,
+              Ying Shan<sup>2</sup>
+            </h6>
+            <p>
+              <sup>1</sup>Tsinghua Shenzhen International Graduate School, Tsinghua University
+              <!-- &nbsp;&nbsp;&nbsp;&nbsp; -->
+              <br>
+              <sup>2</sup>Tencent AI Lab
+              <!-- &nbsp;&nbsp;&nbsp;&nbsp; -->
+              <br>
+              <sup>3</sup>The Hong Kong University of Science and Technology
+            	<br>
+              <sup>*</sup>
+              Corresponding Author
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <!-- <sup>&dagger;</sup> -->
+            </p>
+            <!-- <p> <a class="btn btn-secondary btn-lg" href="" role="button">Paper</a> 
+                <a class="btn btn-secondary btn-lg" href="" role="button">Code</a> 
+                <a class="btn btn-secondary btn-lg" href="" role="button">Data</a> </p> -->
+
+            <div class="row justify-content-center">
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="" role="button" target="_blank">
+                    <i class="fa fa-file"></i> Paper</a> </p>
+              </div>
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="" role="button" target="_blank">
+                    <i class="fa fa-github"></i> Code (coming soon)</a></p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3>Abstract</h3>
+            <hr style="margin-top:0px">
+          	
+            <video width="24%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                <source src="video/1.mp4" type="video/mp4">
+            </video>
+            <video width="24%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                <source src="video/2.mp4" type="video/mp4">
+            </video>
+            <video width="24%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                <source src="video/3.mp4" type="video/mp4">
+            </video>
+            <video width="24%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                <source src="video/4.mp4" type="video/mp4">
+            </video>
+            <h6 style="color:#8899a5">
+              We present <b>UV Gaussians</b>, 
+              which model the 3D human body by jointly learning mesh deformations and 2D UV-space Gaussian textures.
+            </h6>
+            <br><br>
+          	<img src="img/UVGaussians-teaser.jpg" width="100%" alt=""/>
+              <br><br>
+            <p class="text-left">
+              We propose <b>UV Gaussians</b>, which model the 3D human body by jointly learning mesh deformations and 2D UV-space Gaussian textures. Rather than optimizing the properties of Gaussians points in 3D space, we utilize the embedding of UV map to learn Gaussian textures in 2D space, leveraging the capabilities of powerful 2D networks to extract features. Additionally, through an independent Mesh network, we optimize pose-dependent geometric deformations, thereby guiding Gaussian rendering and significantly enhancing rendering quality. We collect and process a new dataset of human motion, which includes multi-view images, scanned models, parametric model registration, and corresponding texture maps. Experimental results demonstrate that our method achieves state-of-the-art synthesis of novel view and novel pose.
+            </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br><br>
+
+  <section>
+    <div class="container">
+      <div class="row">
+          <div class="col-12 text-center">
+            <h3>Method</h3>
+            <hr style="margin-top:0px">
+            <img src="img/UVGaussians-pipeline.jpg" width="100%" alt=""/>
+            <p>&nbsp;</p>
+            <p class="text-left">
+                Overview of our method, which comprises three primary modules: a Mesh
+                U-Net for learning pose-dependent mesh deformation, a Gaussian U-Net for learning
+                pose-dependent Gaussian textures, and a Mesh-Guided 3D Gaussian Animation for
+                animating the Gaussian guided by the mesh.
+            </p>
+            <p>&nbsp;</p>
+          </div>
+      </div>
+    </div>
+  </section>
+  <br><br>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <h3>Demo Video</h3>
+            <video width="100%" controls>
+                <source src="video/UVGaussians-demo.mp4" type="video/mp4">
+            </video>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br><br>
+
+
+  <!-- citing -->
+  <div class="container">
+    <div class="row ">
+      <div class="col-12">
+          <h3>Citation</h3>
+          <hr style="margin-top:0px">
+              <pre style="background-color: #e9eeef;padding: 1.25em 1.5em">
+<code>
+  @inproceedings{UV Gaussians,
+    title = {{UV Gaussians: Joint Learning of Mesh Deformation and Gaussian Textures for Human Avatar Modeling}},
+    author = {Yujiao Jiang, Qingmin Liao, Xiaoyu Li, Li Ma, Qi Zhang, Chaopeng Zhang, Zongqing Lu, and Ying Shan},
+    booktitle = {arxiv},
+    year = {2024}
+  }
+</code></pre>
+          <hr>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center" style="margin-bottom:10px">
+      Thanks to <a href="https://lioryariv.github.io/" target="_blank">Lior Yariv</a> for the website template.
+  </footer>
+
+</body>
+</html>
