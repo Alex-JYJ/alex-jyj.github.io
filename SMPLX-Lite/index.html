@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projectpage of SMPLX-Lite</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  </head>
+
+  <!-- cover -->
+  <section>
+    <div class="jumbotron text-center mt-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>SMPLX-Lite: A Realistic and Drivable Avatar Benchmark with Rich Geometry and Texture Annotations</h2>
+            <h4 style="color:#5a6268;">ICME 2024</h4>
+            <hr>
+            <h6> 
+              Yujiao Jiang<sup>1</sup>,
+              Qingmin Liao<sup>1,2</sup>,
+              Zhaolong Wang<sup>3</sup>,
+              Xiangru Lin<sup>3</sup>,
+              Zongqing Lu<sup>1</sup>,
+              Yuxi Zhao<sup>1</sup>,
+              Hanqing Wei<sup>4</sup>,
+              Jingrui Ye<sup>1</sup>,
+              Yu Zhang<sup>3</sup>,
+              Zhijing Shao<sup>3,5*</sup>
+            </h6>
+            <p>
+              <sup>1</sup>Shenzhen International Graduate School, Tsinghua University
+              <!-- &nbsp;&nbsp;&nbsp;&nbsp; -->
+              <br>
+              <sup>2</sup>Department of Electronic Engineering, Tsinghua University
+              <!-- &nbsp;&nbsp;&nbsp;&nbsp; -->
+              <br>
+              <sup>3</sup><a href="https://www.prometh.xyz/" target="_blank">Prometheus Vision Technology Co., Ltd.</a>
+              <!-- &nbsp;&nbsp;&nbsp;&nbsp; -->
+              <br>
+              <sup>4</sup>Beijing University of Aeronautics and Astronautics
+            	<br>
+              <sup>5</sup>The Hong Kong University of Science and Technology (Guangzhou)
+            	<br>
+              <sup>*</sup>
+              Corresponding Author
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <!-- <sup>&dagger;</sup> -->
+            </p>
+            <!-- <p> <a class="btn btn-secondary btn-lg" href="" role="button">Paper</a> 
+                <a class="btn btn-secondary btn-lg" href="" role="button">Code</a> 
+                <a class="btn btn-secondary btn-lg" href="" role="button">Data</a> </p> -->
+
+            <div class="row justify-content-center">
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="" role="button" target="_blank">
+                    <i class="fa fa-file"></i> Paper</a> </p>
+              </div>
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="" role="button" target="_blank">
+                    <i class="fa fa-github"></i> Code (Coming Soon)</a></p>
+              </div>
+              <div class="column">
+                <p class="mb-5"><a class="btn btn-large btn-light" href="" role="button" target="_blank">
+                  <i class="fa fa-database"></i> Data (Coming Soon)</a> </p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .image-container {
+      width: 100%;
+      display: flex; /* 使用 Flexbox 布局 */
+      justify-content: center; /* 水平居中对齐 */
+      align-items: flex-start; /* 垂直顶部对齐 */
+      gap: 10px; /* 图片之间的间距 */
+    }
+    
+    .image-container figure {
+      text-align: center;
+    }
+    
+    .image-container img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .image-container figcaption {
+      font-style: italic;
+      color: #999;
+      margin-top: 10px;
+    }
+  </style>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3>Abstract</h3>
+            <hr style="margin-top:0px">
+          	
+            
+          	<img src="img/all.jpg" width="100%" alt=""/>
+              <br><br>
+            <h6 style="color:#8899a5">
+                We present <b>SMPLX-Lite</b> dataset, the most comprehensive clothing avatar dataset with multi-view RGB sequences, 3D keypoints annotations, textured scan meshes, and textured SMPLX-Lite-D models.
+            </h6>
+            <br><br>
+              <div class="image-container">
+                <figure>
+                  <img src="img/top_figure1.jpg" alt="Image 1">
+                  <figcaption>(a) Color Image</figcaption>
+                </figure>
+                
+                <figure>
+                  <img src="img/top_figure2.jpg" alt="Image 2">
+                  <figcaption>(b) Keypoints</figcaption>
+                </figure>
+                
+                <figure>
+                  <img src="img/top_figure3_2.jpg" alt="Image 3">
+                  <figcaption>(c) SMPL-X</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="img/top_figure4_2.jpg" alt="Image 4">
+                    <figcaption>(d) Scanned Mesh</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="img/top_figure5_2.jpg" alt="Image 5">
+                    <figcaption>(e) Scanned Texture</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="img/top_figure6_2.jpg" alt="Image 6">
+                    <figcaption>(f) Lite-D</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/top_figure7_2.jpg" alt="Image 7">
+                    <figcaption>(g) Lite-D Texture</figcaption>
+                </figure>
+              </div>
+            <p class="text-left">
+                We propose a new parametric model <b>SMPLX-Lite-D</b>, which can fit the detailed geometry of the scanned mesh while maintaining stable geometry in the nose, mouse and foot areas and reasonable shapes of the face and fingers.
+                We present <b>SMPLX-Lite</b> dataset, the most comprehensive clothing avatar dataset with multi-view RGB sequences, 3D keypoints annotations, textured scan meshes, and textured SMPLX-Lite-D models.
+                The reconstructed meshes and models come with fine geometry details and 4k resolution texture atlas.
+                We use SMPLX-Lite to train a conditional variational autoencoder model that takes human pose and facial keypoints as input, and generates a photorealistic drivable human avatar. 
+            </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br><br>
+
+  <section>
+    <div class="container">
+      <div class="row">
+          <div class="col-12 text-center">
+            <h3>Data Process</h3>
+            <hr style="margin-top:0px">
+            <img src="img/process.jpg" width="95%" alt=""/>
+            <!-- <p>&nbsp;</p> -->
+            <p class="text-left">
+                <b>Data Process Pipeline.</b> Our pipeline produces a variety of data annotations, including 3D keypoints, SMPL-X parameters, textured scanned models, and textured SMPLX-Lite-D models.
+            </p>
+            <p>&nbsp;</p>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+          <div class="col-12 text-center">
+            <h3>Data Visualization</h3>
+            <hr style="margin-top:0px">
+            <img src="img/raw_images.jpg" width="100%" alt=""/>
+            <p>&nbsp;</p>
+            <p class="text-left">
+                <b>Multi-View Capture.</b> SMPLX-Lite deploys 24 standard cameras and 8 telephoto cameras to capture multi-view synchronized RGB sequences. We show several frames of images from a part of these cameras.
+            </p>
+            <p>&nbsp;</p>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+          <div class="col-12 text-center">
+            <h3>Method</h3>
+            <hr style="margin-top:0px">
+            <img src="img/method.jpg" width="100%" alt=""/>
+            <p>&nbsp;</p>
+            <p class="text-left">
+                <b>Method Overview.</b> The CVAE model generates mesh and texture maps via a decoder, which employs pose and face keypoints as driving signals, overlays camera view information, and utilizes latent codes sampled from the distribution obtained by the encoder. The output mesh obtained by LBS, together with the texture map and camera parameters, undergoes the differentiable renderer to produce photorealistic rendered images. The entire training process is end-to-end, and mesh, texture, and final rendered images are all supervisable.
+            </p>
+            <p>&nbsp;</p>
+          </div>
+      </div>
+    </div>
+  </section>
+  <br><br>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <h3>Driving Results</h3>
+            <hr style="margin-top:0px">
+            <img src="img/driving5.jpg" width="50%" alt=""/>
+            <p>&nbsp;</p>
+            <p class="text-center">
+                <b>Driving results of 5 models by the same driving signal.</b> Each column represents a different driving signal.
+            </p>
+            <p>&nbsp;</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br><br>
+
+
+  <!-- citing -->
+  <div class="container">
+    <div class="row ">
+      <div class="col-12">
+          <h3>Citation</h3>
+          <hr style="margin-top:0px">
+              <pre style="background-color: #e9eeef;padding: 1.25em 1.5em">
+<code>
+  @inproceedings{SMPLX-Lite,
+    title = {{SMPLX-Lite: A Realistic and Drivable Avatar Benchmark with Rich Geometry and Texture Annotations}},
+    author = {Yujiao Jiang, Qingmin Liao, Zhaolong Wang, Xiangru Lin, Zongqing Lu, Yuxi Zhao, Hanqing Wei, Jingrui Ye, Yu Zhang, Zhijing Shao},
+    booktitle = {ICME 2024},
+    year = {2024}
+  }
+</code></pre>
+          <hr>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center" style="margin-bottom:10px">
+      Thanks to <a href="https://lioryariv.github.io/" target="_blank">Lior Yariv</a> for the website template.
+  </footer>
+
+</body>
+</html>
